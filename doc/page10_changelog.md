@@ -1,6 +1,14 @@
 Change Log {#changelog}
 ==========
 
+## Version 2023.02.20
+
+Codename: [Perdita Quiescent](https://en.wikipedia.org/wiki/Perdita_(The_Winter%27s_Tale))
+
+### What's Changed
+
+**Full Changelog**: https://github.com/jfalcou/eve/compare/v2022.09.1...2023.02.20
+
 ## Version 2022.09.1
 
 Codename: [Rosalind Serendipitous](https://en.wikipedia.org/wiki/Rosalind_(As_You_Like_It))
