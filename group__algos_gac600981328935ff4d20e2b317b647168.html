@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>E.V.E: eve::plus</title>
+<title>E.V.E: eve::algo::for_each_selected</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,7 +95,7 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('group__core__arithmetic_gad742f5ce084044535470a38bca2d1cc5.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('group__algos_gac600981328935ff4d20e2b317b647168.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -121,8 +121,8 @@ $(document).ready(function(){initNavTree('group__core__arithmetic_gad742f5ce0840
 </div>
 
 <div class="contents">
-<a id="gad742f5ce084044535470a38bca2d1cc5" name="gad742f5ce084044535470a38bca2d1cc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad742f5ce084044535470a38bca2d1cc5">&#9670;&#160;</a></span>plus</h2>
+<a id="gac600981328935ff4d20e2b317b647168" name="gac600981328935ff4d20e2b317b647168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac600981328935ff4d20e2b317b647168">&#9670;&#160;</a></span>for_each_selected</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('group__core__arithmetic_gad742f5ce0840
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">eve::plus = {}</td>
+          <td class="memname">eve::algo::for_each_selected = function_with_traits&lt;for_each_selected_&gt;</td>
         </tr>
       </table>
   </td>
@@ -140,54 +140,86 @@ $(document).ready(function(){initNavTree('group__core__arithmetic_gad742f5ce0840
   </tr>
 </table>
 </div><div class="memdoc">
-<p><b>Defined in Header</b></p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;eve/module/core.hpp&gt;</span></div>
-</div><!-- fragment --><h2 class="groupheader">Callable Signatures </h2>
-<div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceeve.html">eve</a></div>
-<div class="line">{</div>
-<div class="line">   <span class="keyword">template</span>&lt; eve::value T &gt;</div>
-<div class="line">   T <a class="code hl_variable" href="group__core__arithmetic_gad742f5ce084044535470a38bca2d1cc5.html#gad742f5ce084044535470a38bca2d1cc5">plus</a>(T x) <span class="keyword">noexcept</span>;</div>
+
+<p><code>#include &lt;eve/module/algo/algo/for_each_selected.hpp&gt;</code></p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;eve/module/algo.hpp&gt;</span></div>
+</div><!-- fragment --><p>The scalar equivalent of this algorithm would be:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">bool</span> <a class="code hl_variable" href="group__algos_gac600981328935ff4d20e2b317b647168.html#gac600981328935ff4d20e2b317b647168">for_each_selected</a>(std::ranges::forward_range <span class="keyword">auto</span>&amp;&amp; r,</div>
+<div class="line">                       <span class="keyword">auto</span> is_selected,</div>
+<div class="line">                       <span class="keyword">auto</span>&amp;&amp; loop_body) {</div>
+<div class="line">  <span class="keywordflow">for</span> (<span class="keyword">auto</span> f = std::ranges::begin(r); f != std::ranges::end(r); ++f) {</div>
+<div class="line">    <span class="keywordflow">if</span> (is_selected(*f) &amp;&amp; loop_body(f)) {</div>
+<div class="line">      <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">    }</div>
+<div class="line">  }</div>
+<div class="line">  <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__core__arithmetic_gad742f5ce084044535470a38bca2d1cc5_html_gad742f5ce084044535470a38bca2d1cc5"><div class="ttname"><a href="group__core__arithmetic_gad742f5ce084044535470a38bca2d1cc5.html#gad742f5ce084044535470a38bca2d1cc5">eve::plus</a></div><div class="ttdeci">constexpr callable_plus_ plus</div><div class="ttdoc">Computes the opposite of the parameter that must be signed.</div><div class="ttdef"><b>Definition:</b> plus.hpp:54</div></div>
-<div class="ttc" id="anamespaceeve_html"><div class="ttname"><a href="namespaceeve.html">eve</a></div><div class="ttdoc">EVE Main Namespace.</div><div class="ttdef"><b>Definition:</b> abi.hpp:18</div></div>
+<div class="ttc" id="agroup__algos_gac600981328935ff4d20e2b317b647168_html_gac600981328935ff4d20e2b317b647168"><div class="ttname"><a href="group__algos_gac600981328935ff4d20e2b317b647168.html#gac600981328935ff4d20e2b317b647168">eve::algo::for_each_selected</a></div><div class="ttdeci">constexpr auto for_each_selected</div><div class="ttdoc">an algorithm to perform some scalar operation for every element, that matches a given SIMD predicate....</div><div class="ttdef"><b>Definition:</b> for_each_selected.hpp:127</div></div>
+</div><!-- fragment --><h2 class="groupheader">Callable Signatures </h2>
+<div class="fragment"><div class="line"><span class="keyword">namespace </span>eve::algo</div>
+<div class="line">{</div>
+<div class="line">  <span class="keyword">template</span>&lt;relaxed_range Rng, <span class="keyword">typename</span> P, irregular_predicate&lt;unaligned_iterator_t&lt;Rng&gt;&gt; LoopBody&gt;</div>
+<div class="line">  <span class="keywordtype">bool</span> <a class="code hl_variable" href="group__algos_gac600981328935ff4d20e2b317b647168.html#gac600981328935ff4d20e2b317b647168">for_each_selected</a>(Rng&amp;&amp; rng, P is_selected, LoopBody loop_body);</div>
+<div class="line">}</div>
 </div><!-- fragment --><p><b>Parameters</b></p>
 <ul>
-<li><code>x</code> : <a class="el" href="concepteve_1_1value.html">real</a> argument.</li>
+<li>rng - relaxed range which we iterate</li>
+<li>is_selected - simd predicate to check values</li>
+<li>loop_body - operation to perform for each value (should return true to break),</li>
 </ul>
 <p><b>Return value</b></p>
-<p>Returns x</p>
-<dl class="section note"><dt>Note</dt><dd>Although the operator notation with <code>+</code> is supported, the <code>+</code> operator on standard scalar type is the original one and so can lead to automatic promotion.</dd></dl>
+<p>returns true iff the iteration was interrupted.</p>
 <h2 class="groupheader">Example </h2>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;eve/module/core.hpp&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;eve/wide.hpp&gt;</span></div>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;eve/module/algo.hpp&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;eve/module/core.hpp&gt;</span></div>
+<div class="line"> </div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using </span>wide_ft = <a class="code hl_struct" href="structeve_1_1wide.html">eve::wide&lt;float, eve::fixed&lt;4&gt;</a>&gt;;</div>
-<div class="line"><span class="keyword">using </span>wide_it = <a class="code hl_struct" href="structeve_1_1wide.html">eve::wide&lt;std::int16_t, eve::fixed&lt;4&gt;</a>&gt;;</div>
+<div class="line"><span class="preprocessor">#include &lt;span&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;string_view&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;tts/tts.hpp&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> main()</div>
+<div class="line">std::vector&lt;std::string_view&gt;</div>
+<div class="line">split_by(std::string_view s, <span class="keywordtype">char</span> by)</div>
 <div class="line">{</div>
-<div class="line">  wide_ft pf = {-1.0f, 2.0f, -3.0f, -32768.0f};</div>
-<div class="line">  wide_it <a class="code hl_variable" href="group__math__constants_gaa262556a49cd7daf77138a7a636e737f.html#gaa262556a49cd7daf77138a7a636e737f">pi</a> = {-1, 2, -3, -32768};</div>
+<div class="line">  std::vector&lt;std::string_view&gt; res;</div>
+<div class="line">  std::string_view::iterator    last = s.begin();</div>
 <div class="line"> </div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;---- simd&quot;</span> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot;&lt;- pf       = &quot;</span> &lt;&lt; pf &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot;-&gt; plus(pf) = &quot;</span> &lt;&lt; <a class="code hl_variable" href="group__core__arithmetic_gad742f5ce084044535470a38bca2d1cc5.html#gad742f5ce084044535470a38bca2d1cc5">eve::plus</a>(pf) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot;&lt;- pi       = &quot;</span> &lt;&lt; <a class="code hl_variable" href="group__math__constants_gaa262556a49cd7daf77138a7a636e737f.html#gaa262556a49cd7daf77138a7a636e737f">pi</a> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot;-&gt; plus(pi) = &quot;</span> &lt;&lt; <a class="code hl_variable" href="group__core__arithmetic_gad742f5ce084044535470a38bca2d1cc5.html#gad742f5ce084044535470a38bca2d1cc5">eve::plus</a>(<a class="code hl_variable" href="group__math__constants_gaa262556a49cd7daf77138a7a636e737f.html#gaa262556a49cd7daf77138a7a636e737f">pi</a>) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">  <span class="keyword">auto</span> maybe_add_a_string = [&amp;](std::string_view::iterator it) {</div>
+<div class="line">    <span class="comment">// skipping empty</span></div>
+<div class="line">    <span class="keywordflow">if</span>( it != last ) res.push_back({last, it});</div>
+<div class="line">  };</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordtype">float</span>        xf = -32768.0f;</div>
-<div class="line">  std::int16_t xi = -32768;</div>
+<div class="line">  <span class="comment">// arm has weird char type, so we cast.</span></div>
+<div class="line">  std::span&lt;const std::uint8_t&gt; us{ (<span class="keyword">const</span> std::uint8_t*) s.data(), s.size() };</div>
 <div class="line"> </div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;---- scalar&quot;</span> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot;&lt;- xf       = &quot;</span> &lt;&lt; xf &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot;-&gt; plus(xf) = &quot;</span> &lt;&lt; <a class="code hl_variable" href="group__core__arithmetic_gad742f5ce084044535470a38bca2d1cc5.html#gad742f5ce084044535470a38bca2d1cc5">eve::plus</a>(xf) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot;&lt;- xi       = &quot;</span> &lt;&lt; xi &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot;-&gt; plus(xi) = &quot;</span> &lt;&lt; <a class="code hl_variable" href="group__core__arithmetic_gad742f5ce084044535470a38bca2d1cc5.html#gad742f5ce084044535470a38bca2d1cc5">eve::plus</a>(xi) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line">  <span class="keywordflow">return</span> 0;</div>
+<div class="line">  <a class="code hl_variable" href="group__algos_gac600981328935ff4d20e2b317b647168.html#gac600981328935ff4d20e2b317b647168">eve::algo::for_each_selected</a>(</div>
+<div class="line">      us,</div>
+<div class="line">      [&amp;](<span class="keyword">auto</span> x) { <span class="keywordflow">return</span> x == (std::uint8_t)by; },</div>
+<div class="line">      [&amp;](std::span&lt;const std::uint8_t&gt;::iterator us_it)</div>
+<div class="line">      {</div>
+<div class="line">        <span class="keyword">auto</span> it = s.begin() + (us_it - us.begin());</div>
+<div class="line">        maybe_add_a_string(it);</div>
+<div class="line">        last = it + 1;</div>
+<div class="line">        <span class="keywordflow">return</span> <span class="keyword">false</span>;  <span class="comment">// return true here if you want to break.</span></div>
+<div class="line">      });</div>
+<div class="line">  maybe_add_a_string(s.end());</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordflow">return</span> res;</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__math__constants_gaa262556a49cd7daf77138a7a636e737f_html_gaa262556a49cd7daf77138a7a636e737f"><div class="ttname"><a href="group__math__constants_gaa262556a49cd7daf77138a7a636e737f.html#gaa262556a49cd7daf77138a7a636e737f">eve::pi</a></div><div class="ttdeci">constexpr auto pi</div><div class="ttdoc">Callable object computing the constant .</div><div class="ttdef"><b>Definition:</b> pi.hpp:77</div></div>
-<div class="ttc" id="astructeve_1_1wide_html"><div class="ttname"><a href="structeve_1_1wide.html">eve::wide</a></div><div class="ttdoc">Wrapper for SIMD registers.</div><div class="ttdef"><b>Definition:</b> wide.hpp:65</div></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span></div>
+<div class="line">main()</div>
+<div class="line">{</div>
+<div class="line">  std::string_view in = <span class="stringliteral">&quot;Words shall be    split   !&quot;</span>;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot; -&gt; in    = &quot;</span></div>
+<div class="line">            &lt;&lt; in</div>
+<div class="line">            &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot; -&gt; split = &quot;</span></div>
+<div class="line">            &lt;&lt; tts::as_string(split_by(in, <span class="charliteral">&#39; &#39;</span>))</div>
+<div class="line">            &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line">}</div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -197,7 +229,7 @@ $(document).ready(function(){initNavTree('group__core__arithmetic_gad742f5ce0840
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespaceeve.html">eve</a></li>
+    <li class="navelem"><a class="el" href="group__algos.html">Algorithms</a></li>
   </ul>
 </div>
 </div> <!-- DOXYSTRAP RELATED -->
