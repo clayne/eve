@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>E.V.E: eve::sqrt</title>
+<title>E.V.E: eve::fmod</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,7 +95,7 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('group__core__arithmetic_ga6745422ee3727af1a6e34182e8efbcb7.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('group__core__arithmetic_ga5dbda88b3cab20b719e316ecfc301b0e.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -121,8 +121,8 @@ $(document).ready(function(){initNavTree('group__core__arithmetic_ga6745422ee372
 </div>
 
 <div class="contents">
-<a id="ga6745422ee3727af1a6e34182e8efbcb7" name="ga6745422ee3727af1a6e34182e8efbcb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6745422ee3727af1a6e34182e8efbcb7">&#9670;&#160;</a></span>sqrt</h2>
+<a id="ga5dbda88b3cab20b719e316ecfc301b0e" name="ga5dbda88b3cab20b719e316ecfc301b0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5dbda88b3cab20b719e316ecfc301b0e">&#9670;&#160;</a></span>fmod</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('group__core__arithmetic_ga6745422ee372
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">eve::sqrt = <a class="el" href="group__extensions.html#gabf77b781e2a81fa82abc362bc03a1467">functor</a>&lt;sqrt_t&gt;</td>
+          <td class="memname">eve::fmod = <a class="el" href="group__extensions.html#gabf77b781e2a81fa82abc362bc03a1467">functor</a>&lt;fmod_t&gt;</td>
         </tr>
       </table>
   </td>
@@ -145,58 +145,45 @@ $(document).ready(function(){initNavTree('group__core__arithmetic_ga6745422ee372
 </div><!-- fragment --><h2 class="groupheader">Callable Signatures </h2>
 <div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceeve.html">eve</a></div>
 <div class="line">{</div>
-<div class="line">   <span class="keyword">template</span>&lt; eve::<span class="keywordtype">float</span>ing_value T &gt;</div>
-<div class="line">   T <a class="code hl_variable" href="group__core__arithmetic_ga6745422ee3727af1a6e34182e8efbcb7.html#ga6745422ee3727af1a6e34182e8efbcb7">sqrt</a>(T x) <span class="keyword">noexcept</span>;</div>
+<div class="line">   <span class="keyword">template</span>&lt; eve::<span class="keywordtype">float</span>ing_value T,  eve::<span class="keywordtype">float</span>ing_value U&gt;</div>
+<div class="line">   <a class="code hl_typedef" href="namespaceeve.html#af8e498b268c1b3dad8c2ab481a35c0bc">eve::common_value_t&lt;T, U&gt;</a> <a class="code hl_variable" href="group__core__arithmetic_ga5dbda88b3cab20b719e316ecfc301b0e.html#ga5dbda88b3cab20b719e316ecfc301b0e">fmod</a>(T x, U y) <span class="keyword">noexcept</span>;</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__core__arithmetic_ga6745422ee3727af1a6e34182e8efbcb7_html_ga6745422ee3727af1a6e34182e8efbcb7"><div class="ttname"><a href="group__core__arithmetic_ga6745422ee3727af1a6e34182e8efbcb7.html#ga6745422ee3727af1a6e34182e8efbcb7">eve::sqrt</a></div><div class="ttdeci">constexpr auto sqrt</div><div class="ttdoc">Computes the square root of the parameter.</div><div class="ttdef"><b>Definition:</b> sqrt.hpp:75</div></div>
+<div class="ttc" id="agroup__core__arithmetic_ga5dbda88b3cab20b719e316ecfc301b0e_html_ga5dbda88b3cab20b719e316ecfc301b0e"><div class="ttname"><a href="group__core__arithmetic_ga5dbda88b3cab20b719e316ecfc301b0e.html#ga5dbda88b3cab20b719e316ecfc301b0e">eve::fmod</a></div><div class="ttdeci">constexpr auto fmod</div><div class="ttdoc">mimick the std::fmod function for floating values.</div><div class="ttdef"><b>Definition:</b> fmod.hpp:70</div></div>
 <div class="ttc" id="anamespaceeve_html"><div class="ttname"><a href="namespaceeve.html">eve</a></div><div class="ttdoc">EVE Main Namespace.</div><div class="ttdef"><b>Definition:</b> abi.hpp:18</div></div>
+<div class="ttc" id="anamespaceeve_html_af8e498b268c1b3dad8c2ab481a35c0bc"><div class="ttname"><a href="namespaceeve.html#af8e498b268c1b3dad8c2ab481a35c0bc">eve::common_value_t</a></div><div class="ttdeci">typename eve::detail::common_value_impl&lt; void, Ts... &gt;::type common_value_t</div><div class="ttdoc">Computes the SIMD-compatible common type between all Ts.</div><div class="ttdef"><b>Definition:</b> common_value.hpp:43</div></div>
 </div><!-- fragment --><p><b>Parameters</b></p>
 <ul>
-<li><code>x</code> : <a class="el" href="concepteve_1_1floating__value.html">real</a> argument.</li>
+<li><code>x</code>, <code>y</code>: <a class="el" href="concepteve_1_1floating__value.html">real</a> argumentx.</li>
 </ul>
 <p><b>Return value</b></p>
+<p>Return the remainder after division division of <code>x</code> by <code>y</code> and mimick the behaviour of std::fmod.</p>
+<p>In particular:</p>
 <ul>
-<li>value containing the <a class="el" href="glossary_semantic.html#glossary_elementwise">elementwise</a> square root of <code>x</code> or Nan if <code>x</code> is less than zero.</li>
+<li>If <code>x</code> is \(\pm0\), \(\pm0\) is returned.</li>
+<li>If <code>x</code> is \(\pm\inf\) or <code>NaN</code>, <code>NaN</code> is returned.</li>
+<li>If <code>y</code> is \(\pm0\), <code>NaN</code> is returned.</li>
+<li>If <code>y</code> is \(\pm\inf\) and <code>x</code> is finite, <code>x</code>is returned.</li>
 </ul>
-<h2 class="groupheader">Example </h2>
+<p><b>Defined in Header</b></p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;eve/module/core.hpp&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;eve/wide.hpp&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"> </div>
-<div class="line"><span class="keyword">using </span>wide_ft = <a class="code hl_struct" href="structeve_1_1wide.html">eve::wide&lt;float, eve::fixed&lt;8&gt;</a>&gt;;</div>
-<div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> main()</div>
+</div><!-- fragment --><h2 class="groupheader">Callable Signatures </h2>
+<div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceeve.html">eve</a></div>
 <div class="line">{</div>
-<div class="line">  wide_ft pf = {1.0f, 2.0f, -3.0f, <a class="code hl_variable" href="group__core__constants_gaf750842e89385d68afd663f5a9cd0c08.html#gaf750842e89385d68afd663f5a9cd0c08">eve::inf</a>(<a class="code hl_struct" href="structeve_1_1as.html">eve::as&lt;float&gt;</a>()),</div>
-<div class="line">                <a class="code hl_variable" href="group__core__constants_gaf750842e89385d68afd663f5a9cd0c08.html#gaf750842e89385d68afd663f5a9cd0c08">eve::inf</a>(<a class="code hl_struct" href="structeve_1_1as.html">eve::as&lt;float&gt;</a>()), <a class="code hl_variable" href="group__core__constants_ga8ea0a46980f39915fc1780a3ed3c36f7.html#ga8ea0a46980f39915fc1780a3ed3c36f7">eve::nan</a>(<a class="code hl_struct" href="structeve_1_1as.html">eve::as&lt;float&gt;</a>()), -0.0f, 0.0f};</div>
-<div class="line"> </div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;---- simd&quot;</span> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot;&lt;- pf              = &quot;</span> &lt;&lt; pf &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot;-&gt; sqrt(pf)        = &quot;</span> &lt;&lt; <a class="code hl_variable" href="group__core__arithmetic_ga6745422ee3727af1a6e34182e8efbcb7.html#ga6745422ee3727af1a6e34182e8efbcb7">eve::sqrt</a>(pf) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot;-&gt; sqrt[raw](pf)   = &quot;</span> &lt;&lt; <a class="code hl_variable" href="group__core__arithmetic_ga6745422ee3727af1a6e34182e8efbcb7.html#ga6745422ee3727af1a6e34182e8efbcb7">eve::sqrt</a>[eve::raw2](pf) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot;-&gt; sqrt[pf &gt; 0](pf)= &quot;</span> &lt;&lt; <a class="code hl_variable" href="group__core__arithmetic_ga6745422ee3727af1a6e34182e8efbcb7.html#ga6745422ee3727af1a6e34182e8efbcb7">eve::sqrt</a>[pf &gt; 0](pf) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"> </div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordtype">float</span> xf = 32.768f;</div>
-<div class="line"> </div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;---- scalar&quot;</span> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot;&lt;- xf              = &quot;</span> &lt;&lt; xf &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot;-&gt; sqrt(xf)        = &quot;</span> &lt;&lt; <a class="code hl_variable" href="group__core__arithmetic_ga6745422ee3727af1a6e34182e8efbcb7.html#ga6745422ee3727af1a6e34182e8efbcb7">eve::sqrt</a>(xf) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">return</span> 0;</div>
+<div class="line">   <span class="keyword">template</span>&lt; eve::value T,  eve::value U&gt;</div>
+<div class="line">   <a class="code hl_typedef" href="namespaceeve.html#af8e498b268c1b3dad8c2ab481a35c0bc">eve::common_value_t&lt;T, U&gt;</a> <a class="code hl_variable" href="group__core__arithmetic_gae32a7f0a9465fe52d38216d9f5bb6657.html#gae32a7f0a9465fe52d38216d9f5bb6657">rem</a>(T x, U y) <span class="keyword">noexcept</span>;</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__core__constants_ga8ea0a46980f39915fc1780a3ed3c36f7_html_ga8ea0a46980f39915fc1780a3ed3c36f7"><div class="ttname"><a href="group__core__constants_ga8ea0a46980f39915fc1780a3ed3c36f7.html#ga8ea0a46980f39915fc1780a3ed3c36f7">eve::nan</a></div><div class="ttdeci">constexpr auto nan</div><div class="ttdoc">Computes the IEEE quiet NaN constant.</div><div class="ttdef"><b>Definition:</b> nan.hpp:69</div></div>
-<div class="ttc" id="agroup__core__constants_gaf750842e89385d68afd663f5a9cd0c08_html_gaf750842e89385d68afd663f5a9cd0c08"><div class="ttname"><a href="group__core__constants_gaf750842e89385d68afd663f5a9cd0c08.html#gaf750842e89385d68afd663f5a9cd0c08">eve::inf</a></div><div class="ttdeci">constexpr auto inf</div><div class="ttdoc">Computes the infinity ieee value.</div><div class="ttdef"><b>Definition:</b> inf.hpp:70</div></div>
-<div class="ttc" id="astructeve_1_1as_html"><div class="ttname"><a href="structeve_1_1as.html">eve::as</a></div><div class="ttdoc">Lightweight type-wrapper.</div><div class="ttdef"><b>Definition:</b> as.hpp:29</div></div>
-<div class="ttc" id="astructeve_1_1wide_html"><div class="ttname"><a href="structeve_1_1wide.html">eve::wide</a></div><div class="ttdoc">Wrapper for SIMD registers.</div><div class="ttdef"><b>Definition:</b> wide.hpp:65</div></div>
-</div><!-- fragment --><h2 class="groupheader">Semantic Modifiers </h2>
+<div class="ttc" id="agroup__core__arithmetic_gae32a7f0a9465fe52d38216d9f5bb6657_html_gae32a7f0a9465fe52d38216d9f5bb6657"><div class="ttname"><a href="group__core__arithmetic_gae32a7f0a9465fe52d38216d9f5bb6657.html#gae32a7f0a9465fe52d38216d9f5bb6657">eve::rem</a></div><div class="ttdeci">constexpr auto rem</div><div class="ttdoc">Computes the remainder after division.</div><div class="ttdef"><b>Definition:</b> rem.hpp:115</div></div>
+</div><!-- fragment --><p><b>Parameters</b></p>
 <ul>
-<li><p class="startli">Masked Call</p>
-<p class="startli">The call <code>eve;<a class="el" href="group__core__arithmetic_ga6745422ee3727af1a6e34182e8efbcb7.html#ga6745422ee3727af1a6e34182e8efbcb7" title="Computes the square root of the parameter.">sqrt</a>[mask](x)</code> provides a masked version of <code><a class="el" href="group__core__arithmetic_ga6745422ee3727af1a6e34182e8efbcb7.html#ga6745422ee3727af1a6e34182e8efbcb7" title="Computes the square root of the parameter.">eve::sqrt</a></code> which is equivalent to <code>if_else (mask, <a class="el" href="group__core__arithmetic_ga6745422ee3727af1a6e34182e8efbcb7.html#ga6745422ee3727af1a6e34182e8efbcb7" title="Computes the square root of the parameter.">sqrt(x)</a>, x)</code>.</p>
-</li>
-<li><p class="startli"><a class="el" href="group__core__decorators_gaa19d9ce08b61f17096366e2e638e6cc3.html#gaa19d9ce08b61f17096366e2e638e6cc3" title="Higher-order Callable Object imbuing quick and dirty behaviour onto other Callable Objects.">eve::raw</a></p>
-<p class="startli">The call <code>sqrt[raw](x)</code>, call a proper system intrinsic if one exists, but with possibly very poor accuracy in return. Otherwise it uses the non-decorated call. </p>
-</li>
+<li><code>x</code>, <code>y</code>: <a class="el" href="concepteve_1_1value.html">real</a> arguments.</li>
+</ul>
+<p><b>Return value</b></p>
+<p>Return the remainder after division division of <code>x</code> by <code>y</code> and is semantically equivalent to <code>x- <a class="el" href="group__core__arithmetic_ga3fe2cd9f450620121afe84a493f45aa7.html#ga3fe2cd9f450620121afe84a493f45aa7" title="Computes the nearest integer to the input.">eve::nearest(eve:div(x, y))</a>*y</code>.</p>
+<p>In particular:</p>
+<ul>
+<li>If <code>x</code> is \(\pm\inf\) or <code>NaN</code>, <code>NaN</code> is returned.</li>
+<li>If <code>y</code> is \(\pm0\) \(\pm0\) is returned</li>
+<li>If <code>y</code> is <code>NaN</code>, <code>NaN</code> is returned. </li>
 </ul>
 
 </div>
