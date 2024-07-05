@@ -140,11 +140,11 @@ $(document).ready(function(){initNavTree('group__core__decorators_ga65d424f34f68
   </tr>
 </table>
 </div><div class="memdoc">
-<h4><a class="anchor" id="autotoc_md28"></a>
+<h4><a class="anchor" id="autotoc_md29"></a>
 Synopsis</h4>
 <p>if <a class="el" href="group__core__decorators_ga65d424f34f684af47b6e2d2653be632e.html#ga65d424f34f684af47b6e2d2653be632e" title="Higher-order Callable Object imbuing saturation semantic onto other Callable Objects.">saturated(eve::fname)</a> is to be called then </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;eve/module/core.hpp&gt;</span></div>
 </div><!-- fragment --><p> must be included.</p>
-<h4><a class="anchor" id="autotoc_md29"></a>
+<h4><a class="anchor" id="autotoc_md30"></a>
 Members Functions</h4>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> operator()(<a class="code hl_struct" href="structeve_1_1callable.html">eve::callable</a> <span class="keyword">auto</span> <span class="keyword">const</span>&amp; f ) <span class="keyword">const</span> <span class="keyword">noexcept</span>;</div>
 <div class="ttc" id="astructeve_1_1callable_html"><div class="ttname"><a href="structeve_1_1callable.html">eve::callable</a></div><div class="ttdoc">CRTP base class defining an EVE's Callable Object.</div><div class="ttdef"><b>Definition:</b> default_behaviors.hpp:53</div></div>
@@ -157,11 +157,11 @@ Members Functions</h4>
 <dl class="section return"><dt>Returns</dt><dd>A <a href="https://en.cppreference.com/w/cpp/named_req/Callable">Callable Object</a> performing the same kind of operation but while taking care of saturating its return value so that it always fit into the input type range.</dd></dl>
 <p>saturated is currently supported by</p>
 <ul>
-<li><a class="el" href="group__core__arithmetic_gaf9bc648f57be07a02903259faabd2df1.html#gaf9bc648f57be07a02903259faabd2df1" title="Computes the absolute value of the parameter.">eve::abs</a>,</li>
-<li><a class="el" href="group__core__arithmetic_gaeb0fe3ed9cad2906b5e7ab7a6a0d7ea8.html#gaeb0fe3ed9cad2906b5e7ab7a6a0d7ea8" title="Computes the sum of its arguments.">eve::add</a>,</li>
+<li><a class="el" href="group__core__arithmetic_gaf9bc648f57be07a02903259faabd2df1.html#gaf9bc648f57be07a02903259faabd2df1" title="elementwise_callable object computing the absolute value of the parameter.">eve::abs</a>,</li>
+<li><a class="el" href="group__core__arithmetic_gaeb0fe3ed9cad2906b5e7ab7a6a0d7ea8.html#gaeb0fe3ed9cad2906b5e7ab7a6a0d7ea8" title="tuple_callable computing the sum of its arguments.">eve::add</a>,</li>
 <li><a class="el" href="group__core__conversions_gaa19dcccbb0ef0ef464e95ffd7a588867.html#gaa19dcccbb0ef0ef464e95ffd7a588867" title="Converts a value to another type.">eve::convert</a>,</li>
-<li><a class="el" href="group__core__arithmetic_ga0909b456d35f4111012b71e9bba92ede.html#ga0909b456d35f4111012b71e9bba92ede" title="return the input decremented by 1.">eve::dec</a>,</li>
-<li><a class="el" href="group__core__arithmetic_gae0ef9200ab790a71835ff39ff61061a5.html#gae0ef9200ab790a71835ff39ff61061a5" title="Computes the division of multiple values.">eve::div</a>,</li>
+<li><a class="el" href="group__core__arithmetic_ga0909b456d35f4111012b71e9bba92ede.html#ga0909b456d35f4111012b71e9bba92ede" title="elementwise_callable object returning the input decremented by 1.">eve::dec</a>,</li>
+<li><a class="el" href="group__core__arithmetic_gae0ef9200ab790a71835ff39ff61061a5.html#gae0ef9200ab790a71835ff39ff61061a5" title="elementwise_callable object computing the division of multiple values.">eve::div</a>,</li>
 <li><a class="el" href="group__core__arithmetic_ga9765ff0c68fdbe8295fc72526f8e3202.html#ga9765ff0c68fdbe8295fc72526f8e3202" title="return the input incremented by one.">eve::inc</a>,</li>
 <li><a class="el" href="group__core__arithmetic_ga06eee505775e24c81fa5f5b22382251f.html#ga06eee505775e24c81fa5f5b22382251f" title="Computes the product of its arguments.">eve::mul</a>,</li>
 <li><a class="el" href="group__core__arithmetic_ga13ddd05c1c516674e73d2ed018fa5d5a.html#ga13ddd05c1c516674e73d2ed018fa5d5a" title="Computes the difference of its first argument with the sum of the others.">eve::sub</a>,</li>
