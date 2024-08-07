@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>E.V.E: eve::bit_andnot</title>
+<title>E.V.E: eve::chi</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,7 +95,7 @@ var searchBox = new SearchBox("searchBox", "search/",'.html');
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('group__core__bitops_ga694507ee45226b1c33898f0bb4393575.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('group__core__arithmetic_ga1b0e01fadfaff3a8d21d01b84b394cbe.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -121,8 +121,8 @@ $(document).ready(function(){initNavTree('group__core__bitops_ga694507ee45226b1c
 </div>
 
 <div class="contents">
-<a id="ga694507ee45226b1c33898f0bb4393575" name="ga694507ee45226b1c33898f0bb4393575"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga694507ee45226b1c33898f0bb4393575">&#9670;&#160;</a></span>bit_andnot</h2>
+<a id="ga1b0e01fadfaff3a8d21d01b84b394cbe" name="ga1b0e01fadfaff3a8d21d01b84b394cbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1b0e01fadfaff3a8d21d01b84b394cbe">&#9670;&#160;</a></span>chi</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -131,7 +131,7 @@ $(document).ready(function(){initNavTree('group__core__bitops_ga694507ee45226b1c
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">eve::bit_andnot = <a class="el" href="group__extensions.html#gabf77b781e2a81fa82abc362bc03a1467">functor</a>&lt;bit_andnot_t&gt;</td>
+          <td class="memname">eve::chi = <a class="el" href="group__extensions.html#gabf77b781e2a81fa82abc362bc03a1467">functor</a>&lt;chi_t&gt;</td>
         </tr>
       </table>
   </td>
@@ -140,74 +140,69 @@ $(document).ready(function(){initNavTree('group__core__bitops_ga694507ee45226b1c
   </tr>
 </table>
 </div><div class="memdoc">
-<h2 class="groupheader">Header file </h2>
+<p><b>Defined in Header</b></p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;eve/module/core.hpp&gt;</span></div>
 </div><!-- fragment --><h2 class="groupheader">Callable Signatures </h2>
 <div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceeve.html">eve</a></div>
 <div class="line">{</div>
-<div class="line">   <span class="comment">// Regular overloads</span></div>
-<div class="line">   <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="group__core__bitops_ga694507ee45226b1c33898f0bb4393575.html#ga694507ee45226b1c33898f0bb4393575">bit_andnot</a>(<a class="code hl_concept" href="concepteve_1_1value.html">value</a> <span class="keyword">auto</span> x, <a class="code hl_concept" href="concepteve_1_1value.html">value</a> <span class="keyword">auto</span> ... xs)                          <span class="keyword">noexcept</span>; <span class="comment">// 1</span></div>
-<div class="line">   <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="group__core__bitops_ga694507ee45226b1c33898f0bb4393575.html#ga694507ee45226b1c33898f0bb4393575">bit_andnot</a>(kumi::non_empty_product_type <span class="keyword">auto</span> <span class="keyword">const</span>&amp; tup)             <span class="keyword">noexcept</span>; <span class="comment">// 2</span></div>
+<div class="line">   <span class="comment">// Regular overload</span></div>
+<div class="line">   <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="group__core__arithmetic_ga1b0e01fadfaff3a8d21d01b84b394cbe.html#ga1b0e01fadfaff3a8d21d01b84b394cbe">chi</a>(<a class="code hl_concept" href="concepteve_1_1value.html">value</a> <span class="keyword">auto</span> x, <a class="code hl_concept" href="concepteve_1_1value.html">value</a> <span class="keyword">auto</span> <a class="code hl_variable" href="group__core__bitops_gacc0d377341a45797cc129a4940f24b60.html#gacc0d377341a45797cc129a4940f24b60">lo</a>,  <a class="code hl_concept" href="concepteve_1_1value.html">value</a> <span class="keyword">auto</span> <a class="code hl_variable" href="group__core__bitops_ga46f5764b631e4afe92f87ff3ea1e8524.html#ga46f5764b631e4afe92f87ff3ea1e8524">hi</a>)             <span class="keyword">noexcept</span>; <span class="comment">// 1</span></div>
+<div class="line">   <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="group__core__arithmetic_ga1b0e01fadfaff3a8d21d01b84b394cbe.html#ga1b0e01fadfaff3a8d21d01b84b394cbe">chi</a>(<a class="code hl_concept" href="concepteve_1_1value.html">value</a> <span class="keyword">auto</span> x, <span class="keyword">auto</span> belongs)                              <span class="keyword">noexcept</span>; <span class="comment">// 2</span></div>
 <div class="line"> </div>
 <div class="line">   <span class="comment">// Lanes masking</span></div>
-<div class="line">   <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="group__core__bitops_ga694507ee45226b1c33898f0bb4393575.html#ga694507ee45226b1c33898f0bb4393575">bit_andnot</a>[<a class="code hl_concept" href="concepteve_1_1conditional__expr.html">conditional_expr</a> <span class="keyword">auto</span> c](<span class="comment">/*any of the above overloads*/</span>)  <span class="keyword">noexcept</span>; <span class="comment">// 3</span></div>
-<div class="line">   <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="group__core__bitops_ga694507ee45226b1c33898f0bb4393575.html#ga694507ee45226b1c33898f0bb4393575">bit_andnot</a>[<a class="code hl_concept" href="concepteve_1_1logical__value.html">logical_value</a> <span class="keyword">auto</span> m](<span class="comment">/*any of the above overloads*/</span>)     <span class="keyword">noexcept</span>; <span class="comment">// 3</span></div>
+<div class="line">   <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="group__core__arithmetic_ga1b0e01fadfaff3a8d21d01b84b394cbe.html#ga1b0e01fadfaff3a8d21d01b84b394cbe">chi</a>[<a class="code hl_concept" href="concepteve_1_1conditional__expr.html">conditional_expr</a> <span class="keyword">auto</span> c](<span class="comment">/*any of the above overloads*/</span>) <span class="keyword">noexcept</span>; <span class="comment">// 3</span></div>
+<div class="line">   <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="group__core__arithmetic_ga1b0e01fadfaff3a8d21d01b84b394cbe.html#ga1b0e01fadfaff3a8d21d01b84b394cbe">chi</a>[<a class="code hl_concept" href="concepteve_1_1logical__value.html">logical_value</a> <span class="keyword">auto</span> m](<span class="comment">/*any of the above overloads*/</span>)    <span class="keyword">noexcept</span>; <span class="comment">// 3</span></div>
 <div class="line">}</div>
 <div class="ttc" id="aconcepteve_1_1conditional__expr_html"><div class="ttname"><a href="concepteve_1_1conditional__expr.html">eve::conditional_expr</a></div><div class="ttdoc">Specifies that a type is a Conditional Expression.</div><div class="ttdef"><b>Definition:</b> conditional.hpp:27</div></div>
 <div class="ttc" id="aconcepteve_1_1logical__value_html"><div class="ttname"><a href="concepteve_1_1logical__value.html">eve::logical_value</a></div><div class="ttdoc">The concept logical_value&lt;T&gt; is satisfied if and only if T satisfies eve::value and the underlying_ty...</div><div class="ttdef"><b>Definition:</b> value.hpp:107</div></div>
 <div class="ttc" id="aconcepteve_1_1value_html"><div class="ttname"><a href="concepteve_1_1value.html">eve::value</a></div><div class="ttdoc">The concept value&lt;T&gt; is satisfied if and only if T satisfies either eve::scalar_value or eve::simd_va...</div><div class="ttdef"><b>Definition:</b> value.hpp:33</div></div>
-<div class="ttc" id="agroup__core__bitops_ga694507ee45226b1c33898f0bb4393575_html_ga694507ee45226b1c33898f0bb4393575"><div class="ttname"><a href="group__core__bitops_ga694507ee45226b1c33898f0bb4393575.html#ga694507ee45226b1c33898f0bb4393575">eve::bit_andnot</a></div><div class="ttdeci">constexpr auto bit_andnot</div><div class="ttdoc">strict_tuple_callable object computing the bitwise ANDNOT of its arguments.</div><div class="ttdef"><b>Definition:</b> bit_andnot.hpp:90</div></div>
+<div class="ttc" id="agroup__core__arithmetic_ga1b0e01fadfaff3a8d21d01b84b394cbe_html_ga1b0e01fadfaff3a8d21d01b84b394cbe"><div class="ttname"><a href="group__core__arithmetic_ga1b0e01fadfaff3a8d21d01b84b394cbe.html#ga1b0e01fadfaff3a8d21d01b84b394cbe">eve::chi</a></div><div class="ttdeci">constexpr auto chi</div><div class="ttdoc">callable indicatrix of the interval  or of the set for which the invocable returns true.</div><div class="ttdef"><b>Definition:</b> chi.hpp:91</div></div>
+<div class="ttc" id="agroup__core__bitops_ga46f5764b631e4afe92f87ff3ea1e8524_html_ga46f5764b631e4afe92f87ff3ea1e8524"><div class="ttname"><a href="group__core__bitops_ga46f5764b631e4afe92f87ff3ea1e8524.html#ga46f5764b631e4afe92f87ff3ea1e8524">eve::hi</a></div><div class="ttdeci">constexpr auto hi</div><div class="ttdoc">elementwise_callable computing the most significant half of each lane.</div><div class="ttdef"><b>Definition:</b> hi.hpp:71</div></div>
+<div class="ttc" id="agroup__core__bitops_gacc0d377341a45797cc129a4940f24b60_html_gacc0d377341a45797cc129a4940f24b60"><div class="ttname"><a href="group__core__bitops_gacc0d377341a45797cc129a4940f24b60.html#gacc0d377341a45797cc129a4940f24b60">eve::lo</a></div><div class="ttdeci">constexpr auto lo</div><div class="ttdoc">Computes the least significant half of each lane.</div><div class="ttdef"><b>Definition:</b> lo.hpp:73</div></div>
 <div class="ttc" id="anamespaceeve_html"><div class="ttname"><a href="namespaceeve.html">eve</a></div><div class="ttdoc">EVE Main Namespace.</div><div class="ttdef"><b>Definition:</b> abi.hpp:18</div></div>
 </div><!-- fragment --><p><b>Parameters</b></p>
 <ul>
-<li><code>x</code>: first <a class="el" href="concepteve_1_1value.html">argument</a>.</li>
-<li><code>xs...</code>: other <a class="el" href="concepteve_1_1value.html">arguments</a>.</li>
-<li><code>tup</code>: non empty tuple of arguments.</li>
+<li><code>x</code>: value to chi.</li>
+<li><code>lo</code>, <code>hi</code>: <a class="el" href="concepteve_1_1value.html">the boundary values</a> of the interval.</li>
+<li><code>belongs</code>: predicate function</li>
 <li><code>c</code>: Conditional expression masking the operation.</li>
 <li><code>m</code>: Logical value masking the operation.</li>
 </ul>
 <p><b>Return value</b></p><ol type="1">
-<li>The return value type is to the common <code>bit_value</code> of the parameters. Each parameter is converted to this type and then:<ul>
-<li>For two parameters it computes the bitwise ANDNOT of the two parameters</li>
-<li>For more than two parameters the call is semantically equivalent to <code><a class="el" href="group__core__bitops_ga694507ee45226b1c33898f0bb4393575.html#ga694507ee45226b1c33898f0bb4393575" title="strict_tuple_callable object computing the bitwise ANDNOT of its arguments.">bit_andnot(a0, bit_and(xs...))</a></code></li>
+<li>Each <a class="el" href="glossary_semantic.html#glossary_elementwise">element</a> of the result contains:<ul>
+<li><code>0</code>, if <code>x</code> is less than <code>lo</code>. or if <code>hi</code> is strictly less than <code>x</code>.</li>
+<li><code>1</code> otherwise. 2 1 in the type of x if belongs(x) evaluate to true else 0.</li>
 </ul>
 </li>
-<li>equivalent to the call on the elements of the tuple.</li>
 <li><a class="el" href="conditional.html">The operation is performed conditionnaly</a>.</li>
 </ol>
-<h2 class="groupheader">External references <a href="https://en.wikipedia.org/wiki/Bitwise_operation">Wikipedia</a> !  Example </h2>
-<p>! </p><div class="fragment"><div class="line"> </div>
+<dl class="section note"><dt>Note</dt><dd>If any <code>lo</code> is not less or equal to the corresponding <code>hi</code> the routine asserts.</dd></dl>
+<h2 class="groupheader">External references </h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Indicator_function">wikipedia</a></li>
+</ul>
+<h2 class="groupheader">Example </h2>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;eve/module/core.hpp&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;eve/wide.hpp&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main()</div>
 <div class="line">{</div>
-<div class="line">  <span class="keyword">using </span>w_t = <a class="code hl_struct" href="structeve_1_1wide.html">eve::wide&lt;std::int32_t, eve::fixed&lt;4&gt;</a>&gt;;</div>
-<div class="line">  w_t <a class="code hl_variable" href="group__math__constants_gaa262556a49cd7daf77138a7a636e737f.html#gaa262556a49cd7daf77138a7a636e737f">pi</a> = {3, 2, 3, 4}, qi = {4, 1, 1, ~0};</div>
-<div class="line">  std::uint32_t z = 5;</div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;---- simd&quot;</span> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot; &lt;- pi                        = &quot;</span> &lt;&lt; <a class="code hl_variable" href="group__math__constants_gaa262556a49cd7daf77138a7a636e737f.html#gaa262556a49cd7daf77138a7a636e737f">pi</a> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot; &lt;- qi                        = &quot;</span> &lt;&lt; qi &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot; &lt;- z                         = &quot;</span> &lt;&lt; z  &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot; -&gt; bit_andnot(pi, qi)        = &quot;</span> &lt;&lt; <a class="code hl_variable" href="group__core__bitops_ga694507ee45226b1c33898f0bb4393575.html#ga694507ee45226b1c33898f0bb4393575">eve::bit_andnot</a>(<a class="code hl_variable" href="group__math__constants_gaa262556a49cd7daf77138a7a636e737f.html#gaa262556a49cd7daf77138a7a636e737f">pi</a>, qi) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot; -&gt; bit_andnot(qi, z )        = &quot;</span> &lt;&lt; <a class="code hl_variable" href="group__core__bitops_ga694507ee45226b1c33898f0bb4393575.html#ga694507ee45226b1c33898f0bb4393575">eve::bit_andnot</a>(qi, z) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot; -&gt; bit_andnot(pi, z )        = &quot;</span> &lt;&lt; <a class="code hl_variable" href="group__core__bitops_ga694507ee45226b1c33898f0bb4393575.html#ga694507ee45226b1c33898f0bb4393575">eve::bit_andnot</a>(<a class="code hl_variable" href="group__math__constants_gaa262556a49cd7daf77138a7a636e737f.html#gaa262556a49cd7daf77138a7a636e737f">pi</a>, z) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot; -&gt; bit_andnot[pi&lt;qi](pi, qi) = &quot;</span> &lt;&lt; <a class="code hl_variable" href="group__core__bitops_ga694507ee45226b1c33898f0bb4393575.html#ga694507ee45226b1c33898f0bb4393575">eve::bit_andnot</a>[<a class="code hl_variable" href="group__math__constants_gaa262556a49cd7daf77138a7a636e737f.html#gaa262556a49cd7daf77138a7a636e737f">pi</a>&lt;qi](<a class="code hl_variable" href="group__math__constants_gaa262556a49cd7daf77138a7a636e737f.html#gaa262556a49cd7daf77138a7a636e737f">pi</a>, qi) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">  <a class="code hl_struct" href="structeve_1_1wide.html">eve::wide</a> x = {2.0, -3.0, 0.1, 4.0};</div>
+<div class="line">  <a class="code hl_struct" href="structeve_1_1wide.html">eve::wide</a> <a class="code hl_variable" href="group__core__bitops_gacc0d377341a45797cc129a4940f24b60.html#gacc0d377341a45797cc129a4940f24b60">lo</a> = {3.0, -4.0, -10.0, 0.0};</div>
+<div class="line">  <a class="code hl_struct" href="structeve_1_1wide.html">eve::wide</a> <a class="code hl_variable" href="group__core__bitops_ga46f5764b631e4afe92f87ff3ea1e8524.html#ga46f5764b631e4afe92f87ff3ea1e8524">hi</a> = {4.0, -1.0, 0.0, 5.0};</div>
 <div class="line"> </div>
-<div class="line">  std::uint32_t mask = 1 &lt;&lt; 31;</div>
-<div class="line">  <span class="keywordtype">float</span> xi = -3.4565f;</div>
+<div class="line">  <span class="keyword">auto</span> belongs =  [](<span class="keyword">auto</span> x){<span class="keywordflow">return</span> x &gt; 3.0 || x == 2.0; };</div>
 <div class="line"> </div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;---- scalar&quot;</span> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot; &lt;- xi                   = &quot;</span> &lt;&lt; xi &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot; &lt;- mask                 = &quot;</span> &lt;&lt; mask &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot; -&gt; bit_andnot(xi, mask) = &quot;</span> &lt;&lt; <a class="code hl_variable" href="group__core__bitops_ga694507ee45226b1c33898f0bb4393575.html#ga694507ee45226b1c33898f0bb4393575">eve::bit_andnot</a>(xi, mask) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line">  <span class="keywordflow">return</span> 0;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot; &lt;- x                       = &quot;</span> &lt;&lt; x &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot; &lt;- lo                      = &quot;</span> &lt;&lt; <a class="code hl_variable" href="group__core__bitops_gacc0d377341a45797cc129a4940f24b60.html#gacc0d377341a45797cc129a4940f24b60">lo</a> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot; &lt;- hi                      = &quot;</span> &lt;&lt; <a class="code hl_variable" href="group__core__bitops_ga46f5764b631e4afe92f87ff3ea1e8524.html#ga46f5764b631e4afe92f87ff3ea1e8524">hi</a> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot; -&gt; chi(x, belongs)         = &quot;</span> &lt;&lt; <a class="code hl_variable" href="group__core__arithmetic_ga1b0e01fadfaff3a8d21d01b84b394cbe.html#ga1b0e01fadfaff3a8d21d01b84b394cbe">eve::chi</a>(x, belongs) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot; -&gt; chi(x, lo, hi)          = &quot;</span> &lt;&lt; <a class="code hl_variable" href="group__core__arithmetic_ga1b0e01fadfaff3a8d21d01b84b394cbe.html#ga1b0e01fadfaff3a8d21d01b84b394cbe">eve::chi</a>(x, <a class="code hl_variable" href="group__core__bitops_gacc0d377341a45797cc129a4940f24b60.html#gacc0d377341a45797cc129a4940f24b60">lo</a>, <a class="code hl_variable" href="group__core__bitops_ga46f5764b631e4afe92f87ff3ea1e8524.html#ga46f5764b631e4afe92f87ff3ea1e8524">hi</a>) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot; -&gt; chi[x &gt; -2](x, lo, hi)  = &quot;</span> &lt;&lt; <a class="code hl_variable" href="group__core__arithmetic_ga1b0e01fadfaff3a8d21d01b84b394cbe.html#ga1b0e01fadfaff3a8d21d01b84b394cbe">eve::chi</a>[x &gt; -2](x, <a class="code hl_variable" href="group__core__bitops_gacc0d377341a45797cc129a4940f24b60.html#gacc0d377341a45797cc129a4940f24b60">lo</a>, <a class="code hl_variable" href="group__core__bitops_ga46f5764b631e4afe92f87ff3ea1e8524.html#ga46f5764b631e4afe92f87ff3ea1e8524">hi</a>) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__math__constants_gaa262556a49cd7daf77138a7a636e737f_html_gaa262556a49cd7daf77138a7a636e737f"><div class="ttname"><a href="group__math__constants_gaa262556a49cd7daf77138a7a636e737f.html#gaa262556a49cd7daf77138a7a636e737f">eve::pi</a></div><div class="ttdeci">constexpr auto pi</div><div class="ttdoc">Callable object computing the constant .</div><div class="ttdef"><b>Definition:</b> pi.hpp:77</div></div>
 <div class="ttc" id="astructeve_1_1wide_html"><div class="ttname"><a href="structeve_1_1wide.html">eve::wide</a></div><div class="ttdoc">Wrapper for SIMD registers.</div><div class="ttdef"><b>Definition:</b> wide.hpp:65</div></div>
-</div><!-- fragment --> <h2 class="groupheader">Semantic Modifiers </h2>
-<p>@  </p>
-
+</div><!-- fragment --> 
 </div>
 </div>
 </div><!-- contents -->
