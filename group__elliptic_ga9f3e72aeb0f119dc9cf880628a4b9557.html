@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>E.V.E: eve::swap_pairs</title>
+<title>E.V.E: eve::ellint_fe</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -100,7 +100,7 @@ $(function() { codefold.init(0); });
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('group__core__bitops_gaa65d1bc90b342036bb8d0d0e90919b39.html',''); initResizable(true); });
+$(function(){initNavTree('group__elliptic_ga9f3e72aeb0f119dc9cf880628a4b9557.html',''); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -126,8 +126,8 @@ $(function(){initNavTree('group__core__bitops_gaa65d1bc90b342036bb8d0d0e90919b39
 </div>
 
 <div class="contents">
-<a id="gaa65d1bc90b342036bb8d0d0e90919b39" name="gaa65d1bc90b342036bb8d0d0e90919b39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa65d1bc90b342036bb8d0d0e90919b39">&#9670;&#160;</a></span>swap_pairs</h2>
+<a id="ga9f3e72aeb0f119dc9cf880628a4b9557" name="ga9f3e72aeb0f119dc9cf880628a4b9557"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9f3e72aeb0f119dc9cf880628a4b9557">&#9670;&#160;</a></span>ellint_fe</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -136,7 +136,7 @@ $(function(){initNavTree('group__core__bitops_gaa65d1bc90b342036bb8d0d0e90919b39
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">callable_swap_pairs_ eve::swap_pairs = {}</td>
+          <td class="memname">auto eve::ellint_fe = <a class="el" href="group__extensions.html#ga406269d77123b31f9bc18b38b78c8e25">functor</a>&lt;ellint_fe_t&gt;</td>
         </tr>
       </table>
   </td>
@@ -146,49 +146,55 @@ $(function(){initNavTree('group__core__bitops_gaa65d1bc90b342036bb8d0d0e90919b39
 </table>
 </div><div class="memdoc">
 <h2 class="groupheader">Header file </h2>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;eve/module/core.hpp&gt;</span></div>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;eve/module/elliptic.hpp&gt;</span></div>
 </div><!-- fragment --><h2 class="groupheader">Callable Signatures </h2>
 <div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceeve.html">eve</a></div>
 <div class="line">{</div>
-<div class="line">   <span class="keyword">template</span>&lt;value T, std::ptrdiff_t I0, std::ptrdiff_t I1 &gt;</div>
-<div class="line">   T <a class="code hl_variable" href="#gaa65d1bc90b342036bb8d0d0e90919b39">swap_pairs</a>(T x, index_t&lt;I0&gt; <span class="keyword">const</span> &amp; i0, index_t&lt;I1&gt; <span class="keyword">const</span> &amp; i1);</div>
-<div class="ttc" id="agroup__core__bitops_gaa65d1bc90b342036bb8d0d0e90919b39_html_gaa65d1bc90b342036bb8d0d0e90919b39"><div class="ttname"><a href="#gaa65d1bc90b342036bb8d0d0e90919b39">eve::swap_pairs</a></div><div class="ttdeci">constexpr callable_swap_pairs_ swap_pairs</div><div class="ttdoc">swap chosen pair of elements.</div><div class="ttdef"><b>Definition</b> swap_pairs.hpp:51</div></div>
+<div class="line">   <span class="comment">// Regular overload</span></div>
+<div class="line">   <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="#ga9f3e72aeb0f119dc9cf880628a4b9557">ellint_fe</a>(<a class="code hl_concept" href="concepteve_1_1floating__value.html">floating_value</a> <span class="keyword">auto</span> k)                                   <span class="keyword">noexcept</span>; <span class="comment">// 1</span></div>
+<div class="line">   <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="#ga9f3e72aeb0f119dc9cf880628a4b9557">ellint_fe</a>(<a class="code hl_concept" href="concepteve_1_1floating__value.html">floating_value</a> <span class="keyword">auto</span> <a class="code hl_variable" href="group__math__constants_ga0f8fbe6ec946f1ecfc3e2463ab90db22.html#ga0f8fbe6ec946f1ecfc3e2463ab90db22">phi</a>, <a class="code hl_concept" href="concepteve_1_1floating__value.html">floating_value</a> <span class="keyword">auto</span> k)          <span class="keyword">noexcept</span>; <span class="comment">// 2</span></div>
+<div class="line">   <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="#ga9f3e72aeb0f119dc9cf880628a4b9557">ellint_fe</a>[modular](<a class="code hl_concept" href="concepteve_1_1floating__value.html">floating_value</a> <span class="keyword">auto</span> <a class="code hl_variable" href="group__math__constants_ga0f8fbe6ec946f1ecfc3e2463ab90db22.html#ga0f8fbe6ec946f1ecfc3e2463ab90db22">phi</a>, <a class="code hl_concept" href="concepteve_1_1floating__value.html">floating_value</a> <span class="keyword">auto</span> alpha)<span class="keyword">noexcept</span>; <span class="comment">// 2</span></div>
+<div class="line">   <span class="keyword">constexpr</span> <span class="keyword">auto</span> <a class="code hl_variable" href="#ga9f3e72aeb0f119dc9cf880628a4b9557">ellint_fe</a>[eccentric](<a class="code hl_concept" href="concepteve_1_1floating__value.html">floating_value</a> <span class="keyword">auto</span> <a class="code hl_variable" href="group__math__constants_ga0f8fbe6ec946f1ecfc3e2463ab90db22.html#ga0f8fbe6ec946f1ecfc3e2463ab90db22">phi</a>, <a class="code hl_concept" href="concepteve_1_1floating__value.html">floating_value</a> <span class="keyword">auto</span> m)  <span class="keyword">noexcept</span>; <span class="comment">// 2</span></div>
+<div class="line">}</div>
+<div class="ttc" id="aconcepteve_1_1floating__value_html"><div class="ttname"><a href="concepteve_1_1floating__value.html">eve::floating_value</a></div><div class="ttdoc">The concept floating_value&lt;T&gt; is satisfied if and only if T satisfies eve::value and the element type...</div><div class="ttdef"><b>Definition</b> value.hpp:116</div></div>
+<div class="ttc" id="agroup__elliptic_ga9f3e72aeb0f119dc9cf880628a4b9557_html_ga9f3e72aeb0f119dc9cf880628a4b9557"><div class="ttname"><a href="#ga9f3e72aeb0f119dc9cf880628a4b9557">eve::ellint_fe</a></div><div class="ttdeci">constexpr auto ellint_fe</div><div class="ttdoc">elementwise_callable object computing the elliptic integrals of the first and second kind kind.</div><div class="ttdef"><b>Definition</b> ellint_fe.hpp:93</div></div>
+<div class="ttc" id="agroup__math__constants_ga0f8fbe6ec946f1ecfc3e2463ab90db22_html_ga0f8fbe6ec946f1ecfc3e2463ab90db22"><div class="ttname"><a href="group__math__constants_ga0f8fbe6ec946f1ecfc3e2463ab90db22.html#ga0f8fbe6ec946f1ecfc3e2463ab90db22">eve::phi</a></div><div class="ttdeci">constexpr auto phi</div><div class="ttdoc">Callable object computing the golden ratio : .</div><div class="ttdef"><b>Definition</b> phi.hpp:77</div></div>
 <div class="ttc" id="anamespaceeve_html"><div class="ttname"><a href="namespaceeve.html">eve</a></div><div class="ttdoc">EVE Main Namespace.</div><div class="ttdef"><b>Definition</b> abi.hpp:18</div></div>
 </div><!-- fragment --><p><b>Parameters</b></p>
 <ul>
-<li><code>x</code> : <a class="el" href="concepteve_1_1value.html">argument</a>.</li>
-<li><code>i0</code> : first index</li>
-<li><code>i1</code> : second index</li>
+<li><code>phi</code>: <a class="el" href="concepteve_1_1floating__value.html">floating Jacobi amplitude</a>.</li>
+<li><code>k</code>: <a class="el" href="concepteve_1_1floating__value.html">floating elliptic modulus</a>. <code>k</code> must satisfy \(k^2\sin^2\phi \le 1\) or the result is <code>NaN</code>. In the complete case this means \(|k| \le 1\).</li>
+<li><code>c</code>: <a class="el" href="concepteve_1_1conditional__expr.html">Conditional expression</a> masking the operation.</li>
+<li><code>m</code>: <a class="el" href="concepteve_1_1logical__value.html">Logical value</a> masking the operation.</li>
 </ul>
 <p><b>Return value</b></p>
-<p>Return x with element i0 and i1 swapped. Action on scalar is identity. Assert if i0 or i1 are out of range.</p>
+<ol type="1">
+<li>the complete elliptic integral of the first and second kind \(\mathbf{K}(k) = \int_0^{\pi/2} \frac{\mathrm{d}t}{\sqrt{1-k^2\sin^2 t}}\) and \(\mathbf{E}(k) = \int_0^{\pi/2} \scriptstyle \sqrt{1-k^2\sin^2 t}\,\mathrm{d}t\) is returned. (corresponding to \( \phi = \pi/2 \)) are returned.</li>
+<li>the incomplete elliptic integral of the first kind is returned: \(\mathbf{F}(\phi, k) = \int_0^{\phi} \frac{\mathrm{d}t}{\sqrt{1-k^2\sin^2 t}}\)</li>
+</ol>
+<dl class="section note"><dt>Note</dt><dd>Be aware that as \(\pi/2\) is not exactly represented by floating point values the result of the incomplete function with a \(\phi\) floating point value representing \(\pi/2\) can differ a lot with the result of the complete call.</dd></dl>
+<h2 class="groupheader">External references </h2>
+<ul>
+<li><a href="https://en.cppreference.com/w/cpp/numeric/special_functions/ellint_fe">C++ standard reference: ellint_fe</a></li>
+<li><a href="https://dlmf.nist.gov/19.2">DLMF: Elliptic Integrals</a></li>
+<li><a href="https://mathworld.wolfram.com/EllipticIntegral.html">Wolfram MathWorld: Elliptic Integral</a></li>
+</ul>
 <h2 class="groupheader">Example </h2>
-<div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &lt;eve/wide.hpp&gt;</span></div>
+<div class="fragment"><div class="line"><span class="comment">// revision 1</span></div>
+<div class="line"><span class="preprocessor">#include &lt;eve/module/elliptic.hpp&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;eve/module/core.hpp&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using </span>wide_it = <a class="code hl_struct" href="structeve_1_1wide.html">eve::wide&lt;std::uint32_t, eve::fixed&lt;4&gt;</a>&gt;;</div>
+<div class="line"><a class="code hl_struct" href="structeve_1_1wide.html">eve::wide</a> wf{1.0, 0.0, 0.75, 0.5};</div>
+<div class="line"><a class="code hl_struct" href="structeve_1_1wide.html">eve::wide</a> wphi{1.0, 1.0e-30, 0.5, 0.0};</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordtype">int</span> main()</div>
-<div class="line">{</div>
-<div class="line">  wide_it <a class="code hl_variable" href="group__math__constants_gad32687fc782ada2bb223abb7722ac694.html#gad32687fc782ada2bb223abb7722ac694">pi</a> = {1, 3, 7, 15};</div>
-<div class="line">  pi = <a class="code hl_variable" href="group__core__arithmetic_ga286feea728eff1a17edeb307b2aeab54.html#ga286feea728eff1a17edeb307b2aeab54">eve::inc</a>(pi);</div>
-<div class="line">  <span class="keyword">auto</span> _0 =eve::index_t&lt;0&gt;();</div>
-<div class="line">  <span class="keyword">auto</span> _1 =eve::index_t&lt;1&gt;();</div>
-<div class="line">  <span class="keyword">auto</span> _2 =eve::index_t&lt;2&gt;();</div>
-<div class="line">  <span class="keyword">auto</span> _3 =eve::index_t&lt;3&gt;();</div>
-<div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;---- simd&quot;</span> &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot;&lt;- pi                     = &quot;</span> &lt;&lt; pi &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot;-&gt; swap_pairs(pi, _0, _3) = &quot;</span> &lt;&lt; <a class="code hl_variable" href="#gaa65d1bc90b342036bb8d0d0e90919b39">eve::swap_pairs</a>(pi, _0, _3) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot;-&gt; swap_pairs(pi, _1, _2) = &quot;</span> &lt;&lt; <a class="code hl_variable" href="#gaa65d1bc90b342036bb8d0d0e90919b39">eve::swap_pairs</a>(pi, _1, _2) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span></div>
-<div class="line">            &lt;&lt; <span class="stringliteral">&quot;-&gt; swap_pairs(pi, _0, _1) = &quot;</span> &lt;&lt; <a class="code hl_variable" href="#gaa65d1bc90b342036bb8d0d0e90919b39">eve::swap_pairs</a>(pi, _0, _1) &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="keywordtype">int</span> main(){</div>
+<div class="line">   std::cout &lt;&lt; <span class="stringliteral">&quot;&lt;- wf   = &quot;</span> &lt;&lt; wf &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line">   std::cout &lt;&lt; <span class="stringliteral">&quot;&lt;- wphi = &quot;</span> &lt;&lt; wphi &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"> </div>
-<div class="line">  <span class="keywordflow">return</span> 0;</div>
+<div class="line">   std::cout &lt;&lt; <span class="stringliteral">&quot;-&gt; ellint_fe(wf)                = &quot;</span> &lt;&lt; <a class="code hl_variable" href="#ga9f3e72aeb0f119dc9cf880628a4b9557">eve::ellint_fe</a>(wf) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line">   std::cout &lt;&lt; <span class="stringliteral">&quot;-&gt; ellint_fe(wphi, wf)          = &quot;</span> &lt;&lt; <a class="code hl_variable" href="#ga9f3e72aeb0f119dc9cf880628a4b9557">eve::ellint_fe</a>(wphi, wf) &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__core__arithmetic_ga286feea728eff1a17edeb307b2aeab54_html_ga286feea728eff1a17edeb307b2aeab54"><div class="ttname"><a href="group__core__arithmetic_ga286feea728eff1a17edeb307b2aeab54.html#ga286feea728eff1a17edeb307b2aeab54">eve::inc</a></div><div class="ttdeci">constexpr auto inc</div><div class="ttdoc">elementwise_callable object returning the input incremented by 1.</div><div class="ttdef"><b>Definition</b> inc.hpp:83</div></div>
-<div class="ttc" id="agroup__math__constants_gad32687fc782ada2bb223abb7722ac694_html_gad32687fc782ada2bb223abb7722ac694"><div class="ttname"><a href="group__math__constants_gad32687fc782ada2bb223abb7722ac694.html#gad32687fc782ada2bb223abb7722ac694">eve::pi</a></div><div class="ttdeci">constexpr auto pi</div><div class="ttdoc">Callable object computing the constant .</div><div class="ttdef"><b>Definition</b> pi.hpp:77</div></div>
-<div class="ttc" id="astructeve_1_1wide_html"><div class="ttname"><a href="structeve_1_1wide.html">eve::wide</a></div><div class="ttdoc">Wrapper for SIMD registers.</div><div class="ttdef"><b>Definition</b> wide.hpp:87</div></div>
+<div class="ttc" id="astructeve_1_1wide_html"><div class="ttname"><a href="structeve_1_1wide.html">eve::wide</a></div><div class="ttdoc">Wrapper for SIMD registers.</div><div class="ttdef"><b>Definition</b> wide.hpp:89</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
