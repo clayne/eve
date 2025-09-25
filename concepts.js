@@ -5,6 +5,8 @@ var concepts =
         [ "non_owning_range", "concepteve_1_1algo_1_1non__owning__range.html", null ]
       ] ],
       [ "wide_cardinal", "concepteve_1_1wide__cardinal.html", null ],
+      [ "combinable", "concepteve_1_1combinable.html", null ],
+      [ "combinable_to", "concepteve_1_1combinable__to.html", null ],
       [ "conditional_expr", "concepteve_1_1conditional__expr.html", null ],
       [ "relative_conditional_expr", "concepteve_1_1relative__conditional__expr.html", null ],
       [ "generator", "concepteve_1_1generator.html", null ],
@@ -14,6 +16,7 @@ var concepts =
       [ "monoid", "concepteve_1_1monoid.html", null ],
       [ "match_option", "concepteve_1_1match__option.html", null ],
       [ "only_if", "concepteve_1_1only__if.html", null ],
+      [ "translatable_ptr", "concepteve_1_1translatable__ptr.html", null ],
       [ "plain_scalar_value", "concepteve_1_1plain__scalar__value.html", null ],
       [ "logical_scalar_value", "concepteve_1_1logical__scalar__value.html", null ],
       [ "product_scalar_value", "concepteve_1_1product__scalar__value.html", null ],
@@ -48,6 +51,8 @@ var concepts =
       [ "pattern_formula", "concepteve_1_1pattern__formula.html", null ],
       [ "callable_object", "concepteve_1_1callable__object.html", null ],
       [ "like", "concepteve_1_1like.html", null ],
+      [ "translatable_struct", "concepteve_1_1translatable__struct.html", null ],
+      [ "translatable", "concepteve_1_1translatable.html", null ],
       [ "generator_from", "concepteve_1_1generator__from.html", null ]
     ] ]
 ];
